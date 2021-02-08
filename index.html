@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>`
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <section class="head-area">
+        <div class="logo-area">
+            <div ><img onclick='reloadWindow();' src="img/cook.png" alt=""></div>
+        </div>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Recipies</a>
+            <a href="#">Blog</a>
+        </div>
+    </section>
+    <section class="search-area">
+        <div class="inpur-area">
+            <form>
+                <div id="search-id" class="search-input">
+                    <input id="input-meal" type="text" class="form-control" placeholder="Search for meal..."
+                        value="">
+                    <div class="input-group-append">
+                        <button id="search" onclick="searchMeal();" type="button">Search</button>
+                    </div>               
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="main-area">
+        <div id="card-id" class="container">
+        </div>
+        <div id="details-id" class="details-id">
+            <div id='meal-info'> </div>
+        </div>
+    </section>
+</body>
+</html>
